@@ -2,6 +2,8 @@
 
 A 64 × 64 Linux dockapp for Window Maker on X11. A spinning fish doubles as a CPU meter: it stays still at **0%**, spins at half speed at **50%**, and reaches full speed at **100%**. The tile also shows total CPU usage across all cores and updates its reading twice a second.
 
+![Screenshot of the wmfishcpu dock tile showing the fish and the CPU reading](dockapp-preview.png)
+
 ## Build and run
 
 You'll need a C compiler, Make, the Xlib and zlib development headers, Python 3, FFmpeg, and curl (for downloading the clip).
@@ -32,5 +34,5 @@ Drag the tile into the Window Maker Dock or Clip to pin it. If desired, `make in
 
 - **Project idea and requirements:** [@thebuyan](https://github.com/thebuyan) requested a spinning-fish CPU monitor for Window Maker, specified how CPU usage should control the speed, and supplied the animation reference.
 - **AI implementation:** [OpenAI Codex](https://openai.com/codex/) wrote the C/X11 app, frame conversion and build tools, and this documentation. Codex also ran the build and checked the animation behavior. This project was built with AI from the user's brief.
-- **Fish animation:** [Reference clip hosted on Reddit](https://preview.redd.it/llj65a3b50ja1.gif?width=640&format=mp4&s=531009aaed79a173f412e75b181e16b646b4b3d6). The original creator has not been verified. The animation was supplied as a reference and was not created by the project or by Codex. The clip and its extracted frames are not included in this repository.
+- **Fish animation:** [Reference clip hosted on Reddit](https://preview.redd.it/llj65a3b50ja1.gif?width=640&format=mp4&s=531009aaed79a173f412e75b181e16b646b4b3d6). The original creator has not been verified. The animation was supplied as a reference and was not created by the project or by Codex. The repository shows a screenshot of the running dockapp. The source video and playback assets are not bundled.
 - **Dock integration reference:** [Window Maker's dockapp examples](https://github.com/window-maker/dockapps/tree/master/wmmemload).
